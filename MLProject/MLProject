@@ -1,0 +1,14 @@
+name: loan_approval-mlflow
+ 
+conda_env: conda.yaml
+ 
+entry_points:
+  main:
+    parameters:
+      max_tree : {type: int, default: 1000}
+      learning_rate : {type: float, default: 0.1}
+      eval_metrics : {type: string, default: 'AUC'}
+      random_seed : {type: int, default: 210}
+      early_stopping : {type: int, default: 50}
+      dataset : {type: string, default: "loan_approval_preprocessing.csv"}
+    command: "python modelling.py {max_tree} {learning_rate} {eval_metrics} {random_seed} {early_stopping} {dataset}"
