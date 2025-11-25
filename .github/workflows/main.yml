@@ -49,4 +49,4 @@ jobs:
           git config --global user.email ${{ secrets.email }}
           git add mlruns/
           git commit -m "Save mlruns from CI run"
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+          git push origin master
