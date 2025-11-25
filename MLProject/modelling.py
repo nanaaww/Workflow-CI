@@ -28,7 +28,7 @@ valid_pool = Pool(X_valid, y_valid, cat_features=cat_features)
 
 input_example = X_train[0:5]
 
-mlflow.autolog()
+# mlflow.autolog()
 
 # with mlflow.start_run():
 # Log parameters
@@ -38,11 +38,11 @@ eval_metrics = 'AUC'
 random_seed = 210
 early_stopping = 50
 
-mlflow.log_param("iterations", max_tree)
-mlflow.log_param("learning_rate", learning_rate)
-mlflow.log_param("eval_metric", "AUC")
-mlflow.log_param("random_seed", random_seed)
-mlflow.log_param("early_stopping_rounds", early_stopping)
+# mlflow.log_param("iterations", max_tree)
+# mlflow.log_param("learning_rate", learning_rate)
+# mlflow.log_param("eval_metric", "AUC")
+# mlflow.log_param("random_seed", random_seed)
+# mlflow.log_param("early_stopping_rounds", early_stopping)
 
 # Train model
 model = CatBoostClassifier(
@@ -57,15 +57,15 @@ model = CatBoostClassifier(
 model.fit(train_pool, eval_set=valid_pool)
 
 # log model after fit
-mlflow.catboost.log_model(
-  cb_model=model,
-  artifact_path="model",
-  input_example=input_example
-)
+# mlflow.catboost.log_model(
+#   cb_model=model,
+#   artifact_path="model",
+#   input_example=input_example
+# )
 
-accuracy = model.score(X_test, y_test)
-mlflow.log_metric("accuracy", accuracy)
+# accuracy = model.score(X_test, y_test)
+# mlflow.log_metric("accuracy", accuracy)
 
-y_prob = model.predict_proba(X_test)[:, 1]
-roc_auc = roc_auc_score(y_test, y_prob)
-mlflow.log_metric("roc_auc", roc_auc)
+# y_prob = model.predict_proba(X_test)[:, 1]
+# roc_auc = roc_auc_score(y_test, y_prob)
+# mlflow.log_metric("roc_auc", roc_auc)
