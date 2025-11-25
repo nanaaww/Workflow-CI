@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/d82a21a22881471f838f6c859da6f566/artifacts
+end_time: 1764044367847
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d82a21a22881471f838f6c859da6f566
+run_name: invincible-newt-320
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764044363962
+status: 4
+tags: []
+user_id: IT-DK

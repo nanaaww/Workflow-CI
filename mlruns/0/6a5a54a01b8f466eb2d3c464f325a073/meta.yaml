@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/6a5a54a01b8f466eb2d3c464f325a073/artifacts
+end_time: 1764044664983
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a5a54a01b8f466eb2d3c464f325a073
+run_name: silent-sheep-951
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764044659281
+status: 4
+tags: []
+user_id: IT-DK

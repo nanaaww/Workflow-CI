@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/593f5fee90144ec7944aca4e10eee6c1/artifacts
+end_time: 1764044857317
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 593f5fee90144ec7944aca4e10eee6c1
+run_name: aged-vole-174
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764044853989
+status: 4
+tags: []
+user_id: IT-DK

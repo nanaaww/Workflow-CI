@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/340173787918481fb29c836b410e5124/artifacts
+end_time: 1764045014089
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 340173787918481fb29c836b410e5124
+run_name: overjoyed-swan-625
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764044975076
+status: 4
+tags: []
+user_id: IT-DK
