@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/7990dcc19dfd4224b98fee9cf967d51a/artifacts
+end_time: 1764054953051
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7990dcc19dfd4224b98fee9cf967d51a
+run_name: resilient-snake-64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764054942121
+status: 3
+tags: []
+user_id: runner
