@@ -4,11 +4,6 @@ from catboost import CatBoostClassifier, Pool
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 import pandas as pd
-import os
-
-mlflow_tracking_db = "sqlite:///mlflow.db"
-os.environ["MLFLOW_TRACKING_URI"] = mlflow_tracking_db
-mlflow.set_tracking_uri(mlflow_tracking_db)
 
 df = pd.read_csv('loan_approval_preprocessing.csv')
 
