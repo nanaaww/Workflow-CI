@@ -31,7 +31,7 @@ input_example = X_train[0:5]
 # mlflow.autolog()
 
 # with mlflow.start_run():
-## Log parameters
+# Log parameters
 max_tree = 1000
 learning_rate = 0.1
 eval_metrics = 'AUC'
